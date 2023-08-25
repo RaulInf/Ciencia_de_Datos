@@ -10,3 +10,9 @@ Mientras vaya corriendo el programa, despues de que el usuario mande su respuest
 Se pondrá a pruebas el aprendizaje de conocimiento general en donde el usuario intentará contestar el puzzle usando sus distintas habilidades, educación o experiencia laboral, le preguntas serán retos de resolución de problemas matemáticos, sentido común o experincias personales.
 
 Al terminar el programa se espera que se pueda compara los resultados con otros, o se quede con un mayor ineterés de temas que probablemente desconocia y ampliar sus conocimento del mundo.
+
+--------------------------------------------------------------------------------------------------
+
+En este primer avance del código me encargué de programar 10 preguntas de cultura general, en dónde abarqué temas cómo deportes, habilidad matemática, geografía y preguntas aleatorias. 
+
+Mientras va avanzando el programa el usuario está siendo calificado dependiendo las respuestas que vaya acertando, mientras este contesta se le irán sumando puntos a su calificación final, mientras que cuando falle alguna pregunta se le avisará y se mostrará en pantalla la respuesta correcta. Al final de progrma se les mostrará al usuario su calificación final, las cuales fueron sumando conforme contestaba de manera correcta las preguntas, despues de mostrar la calificacón de las 10 preguntas se le medirá el nivel del conocimiento del usuario, donde se le calificará como "Nivel bajo", "Nivel medio" o "Nivel avanzado"
