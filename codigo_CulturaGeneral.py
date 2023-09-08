@@ -1,106 +1,126 @@
+# Proposito del programa: Aplicar condicionales y reuso de funciones
+# Materia:Futuros posibles: utopías y distopías en el cine y la literatura
+# Autor: Jose Raul
+# Fecha: 07-09-2023
 
+#-------------------------------------------------------------------
+# Esta funcion acepta el numero de pregunta a realizar
+# Si la respuesta del usuario es correcta se incrementa
+# la calificación del usuario
+def preguntas(counter):
+#Se hace uso de una variable global para llevar el conteo del score del usuario
+    global resultado
+    if counter == 0:
+        print("Pregunta 1")
+        p1=float(input("¿2+2?: "))
+        if p1 == 4:
+            print ("Correcto")
+            resultado += 1
+#La variable "resultado" contará y guardará los aciertos del usuario
+        else:
+            print ("Respuesta Incorrecta\nRespuesta Correcta =4")
+    elif counter == 1:
+        print ("--------")
+        print("Pregunta 2")
+        p2 = float(input("¿10 x 10?= "))
+        if p2 == 100:
+            print ("Correcto")
+            resultado += 1
+        else :
+            print ("Respuesta Incorrecta\nRespuesta Correcta =100")
+    elif counter ==2:
+        print ("-------")
+        print("Pregunta 3")
+        p3 = float(input("¿Edificio más alto?\n 1)Burj Khalifa  2)Torre Eiffel  ="))
+        if p3 == 1:
+            print ("Correcto")
+            resultado+=1
+        else:
+            print("Respuesta Incorrecta\nRespuesta Correcta ==1)Burj Khalifa")
+    elif counter ==3:
+        print ("-------")
+        print("Pregunta 4")
+        p4 = float(input("¿11,952 / 4987?= "))
+        if p4 == 24:
+            print ("Correcto")
+            resultado+=1
+        else:
+            print("Respuesta Incorrecta\nRespuesta Correcta ==24")        
+    if counter == 4:
+        print("Pregunta 5")
+        p5=float(input("¿Rio más largo?\n 1)Misisipi  2)Nilo  = "))
+        if p5 == 2:
+            print ("Correcto")
+            resultado += 1
+        else:
+            print ("Respuesta Incorrecta\nRespuesta Correcta =2) Nilo")
+    elif counter == 5:
+        print ("--------")
+        print("Pregunta 6")
+        p6 = float(input("¿País más grande del mundo?\n 1)Brasil  2)Rusia  = "))
+        if p6 == 2:
+            print ("Correcto")
+            resultado += 1
+        else :
+            print ("Respuesta Incorrecta\nRespuesta Correcta =2)Russia")
+    elif counter ==6:
+        print ("-------")
+        print("Pregunta 7")
+        p7 = float(input("¿Cuál de los 5 sentidos se desarrolla primero?\n 1)Olfato  2)Vista  3)Tacto= "))
+        if p7 == 1:
+            print ("Correcto")
+            resultado+=1
+        else:
+            print("Respuesta Incorrecta\nRespuesta Correcta ==1)Olfato")
+    elif counter ==7:
+        print ("-------")
+        print("Pregunta 8")
+        p8 = float(input("Atleta con más medalla olimpicas\n 1)Michael Phelps  2)Usain Bolt  = "))
+        if p8 == 1:
+            print ("Correcto")
+            resultado+=1
+        else:
+            print("Respuesta Incorrecta\nRespuesta Correcta ==1)Michael Phelps")   
+    elif counter ==8:
+        print ("-------")
+        print("Pregunta 9")
+        p9 = float(input("¿Cuánto vale PI? (dos decimales)= "))
+        if p9 == 3.14:
+            print ("Correcto")
+            resultado+=1
+        else:
+            print("Respuesta Incorrecta\nRespuesta Correcta == 3.14")
+    elif counter ==9:
+        print ("-------")
+        print("Pregunta 10")
+        p10 = float(input("Vocalista de Queen\n 1)Michael Jackson  2)Freddie Mercury  = "))
+        if p10 == 2:
+            print ("Correcto")
+            resultado+=1
+        else:
+            print("Respuesta Incorrecta\nRespuesta Correcta ==2)Freddie Mercury")   
+    else:
+        print("No mas preguntas!")
+
+#-------------------------------------------------------------------
+# Declaración de variables importantes para la operación del programa
+num_preguntas = 9
 resultado = 0
+cal_reprobatoria = 4
+cal_aprobatoria = 7
 
-print("Pregunta 1")
-p1=float(input("¿2+2?: "))
-if p1 == 4:
-    print ("Correcto")
-    resultado += 1
-else :
-    print ("Respuesta Incorrecta\nRespuesta Correcta =4")
-
-
-print ("--------")
-print("Pregunta 2")
-p2 = float(input("¿10 x 10?= "))
-if p2 == 100:
-    print ("Correcto")
-    resultado += 1
-else :
-    print ("Respuesta Incorrecta\nRespuesta Correcta =100")
-
-print ("--------")
-print("Pregunta 3")
-p3 = int(input("¿Edificio más alto?\n 1)Burj Khalifa  2)Torre Eiffel  = "))
-if p3 == 1:
-    print ("Correcto")
-    resultado += 1
-else :
-    print ("Respuesta Incorrecta\nRespuesta Correcta = 1)Burj Khalifa")
-
-print ("--------")
-print("Pregunta 4")
-p4 = float(input("¿11,952 / 4987?= "))
-if p4 == 24:
-    print ("Correcto")
-    resultado += 1
-else :
-    print ("Respuesta Incorrecta\nRespuesta Correcta =24")
-
-print ("--------")
-print("Pregunta 5")
-p5 = int(input("¿Rio más largo?\n 1)Misisipi  2)Nilo  = "))
-if p5 == 2:
-    print ("Correcto")
-    resultado += 1
-else :
-    print ("Respuesta Incorrecta\nRespuesta Correcta = 2)Nilo")
-
-print ("--------")
-print("Pregunta 6")
-p6 = int(input("¿País más grande del mundo?\n 1)Brasil  2)Rusia  = "))
-if p6 == 2:
-    print ("Correcto")
-    resultado += 1
-else :
-    print ("Respuesta Incorrecta\nRespuesta Correcta = 2)Rusia")
-
-
-print ("--------")
-print("Pregunta 7")
-p7 = int(input("¿Cuál de los 5 sentidos se desarrolla primero?\n 1)Olfato  2)Vista = "))
-if p7 == 1:
-    print ("Correcto")
-    resultado += 1
-else :
-    print ("Respuesta Incorrecta\nRespuesta Correcta = 1)Olfato")
-
-
-print ("--------")
-print("Pregunta 8")
-p8 = int(input("Atleta con más medalla olimpicas\n 1)Michael Phelps  2)Usain Bolt  = "))
-if p8 == 1:
-    print ("Correcto")
-    resultado += 1
-else :
-    print ("Respuesta Incorrecta\nRespuesta Correcta = 1)Michael Phelps")
-
-
-print ("--------")
-print("Pregunta 9")
-p9 = float(input("¿Cuánto vale PI? (dos decimales)= "))
-if p9 == 3.14:
-    print ("Correcto")
-    resultado += 1
-else :
-    print ("Respuesta Incorrecta\nRespuesta Correcta = 3.14")
-
-
-print ("--------")
-print("Pregunta 10")
-p10 = int(input("Vocalista de Queen\n 1)Michael Jackson  2)Freddie Mercury  = "))
-if p10 == 1:
-    print ("Correcto")
-    resultado += 1
-else :
-    print ("Respuesta Incorrecta\nRespuesta Correcta = 2) Freddie Mercury")
-
-
-
+#-------------------------------------------------------------------
+# Ejecución de la rutina principal, la cual llama a la función 
+# preguntas la cual permmite hacer las preguntas requeridas
+for counter in range(0, num_preguntas):
+    preguntas(counter)
+#Aqui se mostrará el score del usuario con los datos guardos en la variable "resultado"
 print("\nTu resultado es de: %i" % resultado)
-if resultado <= 4:
+if resultado <= cal_reprobatoria:
     print("Nivel bajo")
-elif resultado > 4 <=7:
+elif resultado > cal_reprobatoria <=cal_aprobatoria:
     print("Nivel promedio")
 else:
-    print("Nivel avanzado")
+    print("Nivel avanzado")    
+
+# Fin del programa
