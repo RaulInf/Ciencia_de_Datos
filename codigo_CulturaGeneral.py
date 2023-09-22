@@ -46,7 +46,8 @@ def preguntas(counter):
             resultado+=1
         else:
             print("Respuesta Incorrecta\nRespuesta Correcta ==24")        
-    if counter == 4:
+    elif counter == 4:
+        print ("--------")
         print("Pregunta 5")
         p5=float(input("¿Rio más largo?\n 1)Misisipi  2)Nilo  = "))
         if p5 == 2:
@@ -99,6 +100,7 @@ def preguntas(counter):
             resultado+=1
         else:
             print("Respuesta Incorrecta\nRespuesta Correcta ==2)Freddie Mercury")   
+
     else:
         print("No mas preguntas!")
 
@@ -112,15 +114,18 @@ cal_aprobatoria = 7
 #-------------------------------------------------------------------
 # Ejecución de la rutina principal, la cual llama a la función 
 # preguntas la cual permmite hacer las preguntas requeridas
+
 for counter in range(0, num_preguntas):
     preguntas(counter)
-#Aqui se mostrará el score del usuario con los datos guardos en la variable "resultado"
+#La funcíon "for" hace que las preguntas vayan corriendo una por una hasta llegar al número de preguntas máximo (en este caso 9).
+
 print("\nTu resultado es de: %i" % resultado)
 if resultado <= cal_reprobatoria:
     print("Nivel bajo")
 elif resultado > cal_reprobatoria <=cal_aprobatoria:
     print("Nivel promedio")
 else:
-    print("Nivel avanzado")    
+    print("Nivel avanzado")  
 
+#Aqui se mostrará el score del usuario con los datos guardos en la variable "resultado"
 # Fin del programa
