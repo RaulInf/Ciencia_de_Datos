@@ -1,7 +1,7 @@
 # Proposito del programa: Aplicar condicionales y reuso de funciones
 # Materia:Futuros posibles: utopías y distopías en el cine y la literatura
 # Autor: Jose Raul
-# Fecha: 07-09-2023
+# Fecha: 28-09-2023
 
 #-------------------------------------------------------------------
 # Esta funcion acepta el numero de pregunta a realizar
@@ -100,9 +100,23 @@ def preguntas(counter):
             resultado+=1
         else:
             print("Respuesta Incorrecta\nRespuesta Correcta ==2)Freddie Mercury")   
-
     else:
         print("No mas preguntas!")
+
+
+def pregunta_bonus():
+    global resultado
+#Aquí se crea una lista que le se mostrará al usuario
+    Animales = ['Perro', 'Tortuga', 'Gato','Ballena']
+    print("\n De la lista mostrada")
+    print(Animales)
+    bonus = input("\n¿Cual animal es oviparo? ")
+#su respuesta se comparará con la lista y se obtendrá un resultado
+    if bonus == Animales[1]:
+        print("\n Respuesta correcta")
+        resultado +=1
+    else:
+        print("\n Respuesta incorrecta")
 
 #-------------------------------------------------------------------
 # Declaración de variables importantes para la operación del programa
@@ -119,6 +133,8 @@ for counter in range(0, num_preguntas):
     preguntas(counter)
 #La funcíon "for" hace que las preguntas vayan corriendo una por una hasta llegar al número de preguntas máximo (en este caso 9).
 
+pregunta_bonus()
+
 print("\nTu resultado es de: %i" % resultado)
 if resultado <= cal_reprobatoria:
     print("Nivel bajo")
@@ -126,6 +142,5 @@ elif resultado > cal_reprobatoria <=cal_aprobatoria:
     print("Nivel promedio")
 else:
     print("Nivel avanzado")  
-
 #Aqui se mostrará el score del usuario con los datos guardos en la variable "resultado"
 # Fin del programa
