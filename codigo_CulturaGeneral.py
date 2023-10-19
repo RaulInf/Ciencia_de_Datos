@@ -1,5 +1,5 @@
-# Proposito del programa: Aplicar condicionales y reuso de funciones
-# Materia:Futuros posibles: utopías y distopías en el cine y la literatura
+# Proposito del programa: Proyecto final
+# Materia:Pensamiento computacional para ingeniería (Gpo 414)
 # Autor: Jose Raul Infante Paadilla A01708002
 # Fecha: 19-10-2023
 
