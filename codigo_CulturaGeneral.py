@@ -1,4 +1,7 @@
-# Proposito del programa: Aplicar condicionales y reuso de funciones
+
+
+
+  # Proposito del programa: Aplicar condicionales y reuso de funciones
 # Materia:Futuros posibles: utopías y distopías en el cine y la literatura
 # Autor: Jose Raul
 # Fecha: 28-09-2023
@@ -7,6 +10,7 @@
 # Esta funcion acepta el numero de pregunta a realizar
 # Si la respuesta del usuario es correcta se incrementa
 # la calificación del usuario
+
 def preguntas(counter):
 #Se hace uso de una variable global para llevar el conteo del score del usuario
     global resultado
@@ -106,6 +110,7 @@ def preguntas(counter):
 
 def pregunta_bonus():
     global resultado
+    print ("-----------\nPregunta Bonus")
 #Aquí se crea una lista que le se mostrará al usuario
     Animales = ['Perro', 'Tortuga', 'Gato','Ballena']
     print("\n De la lista mostrada")
@@ -129,18 +134,35 @@ cal_aprobatoria = 7
 # Ejecución de la rutina principal, la cual llama a la función 
 # preguntas la cual permmite hacer las preguntas requeridas
 
-for counter in range(0, num_preguntas):
+def hacer_preguntas():
+  
+  global resultado
+  
+  for counter in range(num_preguntas):
     preguntas(counter)
-#La funcíon "for" hace que las preguntas vayan corriendo una por una hasta llegar al número de preguntas máximo (en este caso 9).
 
-pregunta_bonus()
+  pregunta_bonus()
 
-print("\nTu resultado es de: %i" % resultado)
-if resultado <= cal_reprobatoria:
-    print("Nivel bajo")
-elif resultado > cal_reprobatoria <=cal_aprobatoria:
-    print("Nivel promedio")
-else:
-    print("Nivel avanzado")  
+#Función para que haga correr los resultados del quiz
+def mostrar_resultado():
+
+  print("\nTu resultado es de: %i" % resultado)
+
+  if resultado <= cal_reprobatoria:
+    print("Nivel bajo\nSigue Practicando")
+  elif resultado > cal_reprobatoria and resultado <= cal_aprobatoria:
+    print("Nivel promedio\nTu puedes más")
+  else:
+    print("Nivel avanzado\nExcelente juego")
+
+ # Función principal
+ #Manadará a llamar los funciones de las preguntas y resultados
+def main():
+
+  hacer_preguntas()
+  
+  mostrar_resultado()
+
+  
 #Aqui se mostrará el score del usuario con los datos guardos en la variable "resultado"
 # Fin del programa
