@@ -1,10 +1,7 @@
-
-
-
-  # Proposito del programa: Aplicar condicionales y reuso de funciones
+# Proposito del programa: Aplicar condicionales y reuso de funciones
 # Materia:Futuros posibles: utopías y distopías en el cine y la literatura
-# Autor: Jose Raul
-# Fecha: 28-09-2023
+# Autor: Jose Raul Infante Paadilla A01708002
+# Fecha: 19-10-2023
 
 #-------------------------------------------------------------------
 # Esta funcion acepta el numero de pregunta a realizar
