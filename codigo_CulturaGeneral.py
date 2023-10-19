@@ -151,6 +151,9 @@ def mostrar_resultado():
     print("Nivel promedio\nTu puedes más")
   else:
     print("Nivel avanzado\nExcelente juego")
+#Aqui se mostrará el score del usuario con los datos guardos en la variable "resultado"
+# Fin del programa
+
 
  # Función principal
  #Manadará a llamar los funciones de las preguntas y resultados
@@ -160,6 +163,4 @@ def main():
   
   mostrar_resultado()
 
-  
-#Aqui se mostrará el score del usuario con los datos guardos en la variable "resultado"
-# Fin del programa
+print (main())  
